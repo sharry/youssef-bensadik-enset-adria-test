@@ -1,8 +1,8 @@
 package net.bensadik.poc.walletservice.mapper;
 
-import org.springframework.data.domain.Page;
-
-import java.util.List;
+import net.bensadik.poc.walletservice.model.Wallet;
+import net.bensadik.poc.walletservice.model.WalletResponse;
+import org.springframework.web.bind.annotation.Mapping;
 
 @Mapper(
         componentModel = MappingConstants.ComponentModel.SPRING,

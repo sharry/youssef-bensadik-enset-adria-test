@@ -1,6 +1,7 @@
 package net.bensadik.poc.walletservice.client;
 
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
