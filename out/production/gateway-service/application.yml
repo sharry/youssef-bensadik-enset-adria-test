@@ -1,0 +1,41 @@
+server:
+  port:
+
+spring:
+  application:
+    name: gateway-service
+
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowed-headers: "*"
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone:
+
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+    path: /swagger
+    config-url: /v3/api-docs/swagger-config
+    urls:
+      - url: /transfer-service/docs
+        name: Transfer Service
+        displayName: Transfer Service
+      - url: /wallet-service/docs
+        name: Wallet Service
+        displayName: Wallet Service
